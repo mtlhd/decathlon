@@ -27,4 +27,6 @@ function calcPoints(result, athlete, event, form) {
   } else {
     points = calcFieldPoints(result, athlete, event);
   }
+  
+  form.element[event + '-points-' + athlete].value = points;
 }
