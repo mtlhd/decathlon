@@ -20,7 +20,7 @@ function calcFieldPoints(result, athlete, event) {
   return Math.ceil(100 * parameters[event]['a'] * Math.pow((result - parameters[event]['b']), parameters[event]['c'])) / 100;
 }
 
-function calcPoints(result, athlete, event, form) {
+function calcPoints(result, athlete, event) {
   var points = 0;
   if ((event === "100m") || (event === "400m") || (event === "1500m") || (event === "hurdles")) {
     points = calcTrackPoints(result, athlete, event);
@@ -28,6 +28,6 @@ function calcPoints(result, athlete, event, form) {
     points = calcFieldPoints(result, athlete, event);
   }
   
-  var pointsField = form.getElementById(event + "-points-" + athlete);
+  var pointsField = document.getElementById(event + "-points-" + athlete);
   pointsField.value = points;
 }
