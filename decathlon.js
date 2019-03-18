@@ -36,7 +36,7 @@ function calcPoints(result, athlete, event) {
 
 function calcTotal(athlete) {
   var points = 0;
-  var keys = parameters.keys();
+  var keys = parameters.keys;
   
   for (index = 0; index < keys.length; ++index) {
     var pointsField = document.getElementById(keys[index] + "-points-" + athlete);
