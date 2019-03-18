@@ -21,12 +21,12 @@ function calcFieldPoints(result, athlete, event) {
 }
 
 function calcPoints(result, athlete, event, form) {
-  points = 0;
+  var points = 0;
   if ((event === "100m") || (event === "400m") || (event === "1500m") || (event === "hurdles")) {
     points = calcTrackPoints(result, athlete, event);
   } else {
     points = calcFieldPoints(result, athlete, event);
   }
   
-  form.element[event + '-points-' + athlete].value = points;
+  document.form.element[event + '-points-' + athlete].value = points;
 }
