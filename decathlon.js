@@ -1,5 +1,5 @@
 //            100m,    Long Jump, Shot Put, High Jump, 400m,    110m Hurdles, Discus Throw, Pole Vault, Javelin Throw, 1500m
-parameters = new Array{};
+parameters = new Array();
 
 parameters['100m'] = new Array {a: 25.4347, b: 18, c: 1.81};
 parameters['LongJump'] = new Array {a: 0.14354, b: 220, c: 1.4};
