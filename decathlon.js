@@ -38,8 +38,8 @@ function calcTotal(athlete) {
   var points = 0;
   var keys = parameters.keys;
   
-  for (index = 0; index < keys.length; ++index) {
-    var pointsField = document.getElementById(keys[index] + "-points-" + athlete);
+  for (const key of keys) {
+    var pointsField = document.getElementById(keys + "-points-" + athlete);
     points += pointsField.value;
   }
   
