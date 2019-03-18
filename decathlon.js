@@ -12,3 +12,19 @@ parameters['Pole'] = new Array (a: 0.2797, b: 100, c: 1.35);
 parameters['Javelin'] = new Array (a: 10.14, b: 7, c: 1.08);
 parameters['1500m'] = new Array (a: 0.03768, b: 480, c: 1.85);
 
+function calcTrackPoints(result, athlete, event) {
+  return Math.ceil(100 * parameters[event]['a'] * Math.pow((parameters[event]['b'] - result), parameters[event]['c'])) / 100;
+}
+
+function calcFieldPoints(result, athlete, event) {
+  return Math.ceil(100 * parameters[event]['a'] * Math.pow((result - parameters[event]['b']), parameters[event]['c'])) / 100;
+}
+
+function calcPoints(result, athlete, event, form) {
+  points = 0;
+  if ((event === "100m") || (event === "400m") || (event === "1500m") || (event === "hurdles")) {
+    points = calcTrackPoints(result, athlete, event);
+  } else {
+    points = calcFieldPoints(result, athlete, event);
+  }
+}
