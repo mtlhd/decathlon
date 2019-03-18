@@ -23,130 +23,244 @@
         <td>100m [s]</td>
         <td>Long Jump [cm]</td>
         <td>Shot Put [m]</td>
-        <td>High Jump [m]</td>
+        <td>High Jump [cm]</td>
         <td>400m [s]</td>
         
         <td>110m Hurdles [s]</td>
         <td>Discus Throw [m]</td>
-        <td>Pole Vault [m]</td>
+        <td>Pole Vault [cm]</td>
         <td>Javelin Throw [m]</td>
-        <td>1500m [m:ss:ms]</td>
+        <td>1500m [s]</td>
       </tr>
       
       <tr>
         <td>Athlete A</td>
         <td><div class="form-item form-type-textfield form-item-100m-result-athleteA">
-          <input class="result-field form-text" type="text" id="100m-result-athleteA" name="100m_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','100m')"/>
+          <input class="result-field form-text" type="text" id="100m-result-athleteA" name="100m_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','100m')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-longjump-result-athleteA">
-          <input class="result-field form-text" type="text" id="longjump-result-athleteA" name="longjump_result-athleteA" value="" size="4" maxlength="4" onchange="calcPoints(this.value,'athleteA','longjump')"/>
+          <input class="result-field form-text" type="text" id="longjump-result-athleteA" name="longjump_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','longjump')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-shotput-result-athleteA">
-          <input class="result-field form-text" type="text" id="shotput-result-athleteA" name="shotput_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','shotput')"/>
+          <input class="result-field form-text" type="text" id="shotput-result-athleteA" name="shotput_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','shotput')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-highjump-result-athleteA">
-          <input class="result-field form-text" type="text" id="highjump-result-athleteA" name="highjump_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','highjump')"/>
+          <input class="result-field form-text" type="text" id="highjump-result-athleteA" name="highjump_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','highjump')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-400m-result-athleteA">
-          <input class="result-field form-text" type="text" id="400m-result-athleteA" name="400m_result-athleteA" value="" size="8" maxlength="8" onchange="pointCalc(this.value,'athleteA','400m')"/>
+          <input class="result-field form-text" type="text" id="400m-result-athleteA" name="400m_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','400m')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-hurdles-result-athleteA">
-          <input class="result-field form-text" type="text" id="hurdles-result-athleteA" name="hurdles_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','hurdles')"/>
+          <input class="result-field form-text" type="text" id="hurdles-result-athleteA" name="hurdles_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','hurdles')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-discus-result-athleteA">
-          <input class="result-field form-text" type="text" id="discus-result-athleteA" name="discus_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','discus')"/>
+          <input class="result-field form-text" type="text" id="discus-result-athleteA" name="discus_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','discus')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-pole-result-athleteA">
-          <input class="result-field form-text" type="text" id="pole-result-athleteA" name="pole_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','pole')"/>
+          <input class="result-field form-text" type="text" id="pole-result-athleteA" name="pole_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','pole')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-javelin-result-athleteA">
-          <input class="result-field form-text" type="text" id="javelin-result-athleteA" name="javelin_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','javelin')"/>
+          <input class="result-field form-text" type="text" id="javelin-result-athleteA" name="javelin_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','javelin')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-1500m-result-athleteA">
-          <input class="result-field form-text" type="text" id="1500m-result-athleteA" name="1500m_result-athleteA" value="" size="8" maxlength="8" onchange="calcPoints(this.value,'athleteA','1500m')"/>
+          <input class="result-field form-text" type="text" id="1500m-result-athleteA" name="1500m_result-athleteA" value="" onchange="calcPoints(this.value,'athleteA','1500m')"/>
           </div>
         </td>
       </tr>
       <tr>
-        <td><div class="form-item form-type-textfield form-item-total-points-athleteA"><input class="points-field form-text" type="text" id="total-points-athleteA" name="total_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-100m-points-athleteA"><input class="points-field form-text" type="text" id="100m-points-athleteA" name="100m_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-longjump-points-athleteA"><input class="points-field form-text" type="text" id="longjump-points-athleteA" name="longjump_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-shotput-points-athleteA"><input class="points-field form-text" type="text" id="shotput-points-athleteA" name="shotput_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-highjump-points-athleteA"><input class="points-field form-text" type="text" id="highjump-points-athleteA" name="highjump_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-400m-points-athleteA"><input class="points-field form-text" type="text" id="400m-points-athleteA" name="400m_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-hurdles-points-athleteA"><input class="points-field form-text" type="text" id="hurdles-points-athleteA" name="hurdles_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-discus-points-athleteA"><input class="points-field form-text" type="text" id="discus-points-athleteA" name="discus_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-pole-points-athleteA"><input class="points-field form-text" type="text" id="pole-points-athleteA" name="pole_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-javelin-points-athleteA"><input class="points-field form-text" type="text" id="javelin-points-athleteA" name="javelin_points_athleteA" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-1500m-points-athleteA"><input class="points-field form-text" type="text" id="1500m-points-athleteA" name="1500m_points_athleteA" value="" size="4" maxlength="4" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-total-points-athleteA"><input class="points-field form-text" type="text" id="total-points-athleteA" name="total_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-100m-points-athleteA"><input class="points-field form-text" type="text" id="100m-points-athleteA" name="100m_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-longjump-points-athleteA"><input class="points-field form-text" type="text" id="longjump-points-athleteA" name="longjump_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-shotput-points-athleteA"><input class="points-field form-text" type="text" id="shotput-points-athleteA" name="shotput_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-highjump-points-athleteA"><input class="points-field form-text" type="text" id="highjump-points-athleteA" name="highjump_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-400m-points-athleteA"><input class="points-field form-text" type="text" id="400m-points-athleteA" name="400m_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-hurdles-points-athleteA"><input class="points-field form-text" type="text" id="hurdles-points-athleteA" name="hurdles_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-discus-points-athleteA"><input class="points-field form-text" type="text" id="discus-points-athleteA" name="discus_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-pole-points-athleteA"><input class="points-field form-text" type="text" id="pole-points-athleteA" name="pole_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-javelin-points-athleteA"><input class="points-field form-text" type="text" id="javelin-points-athleteA" name="javelin_points_athleteA" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-1500m-points-athleteA"><input class="points-field form-text" type="text" id="1500m-points-athleteA" name="1500m_points_athleteA" value="" /></div></td>
       </tr>
 
       <tr>
         <td>Athlete B</td>
         <td><div class="form-item form-type-textfield form-item-100m-result-athleteB">
-          <input class="result-field form-text" type="text" id="100m-result-athleteB" name="100m_result-athleteB" value="" size="8" maxlength="8" onchange="points100m"/>
+          <input class="result-field form-text" type="text" id="100m-result-athleteB" name="100m_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','100m')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-longjump-result-athleteB">
-          <input class="result-field form-text" type="text" id="longjump-result-athleteB" name="longjump_result-athleteB" value="" size="4" maxlength="4" onchange="pointsLongJump"/>
+          <input class="result-field form-text" type="text" id="longjump-result-athleteB" name="longjump_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','longjump')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-shotput-result-athleteB">
-          <input class="result-field form-text" type="text" id="shotput-result-athleteB" name="shotput_result-athleteB" value="" size="8" maxlength="8" onchange="pointsShotPut"/>
+          <input class="result-field form-text" type="text" id="shotput-result-athleteB" name="shotput_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','shotput')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-highjump-result-athleteB">
-          <input class="result-field form-text" type="text" id="highjump-result-athleteB" name="highjump_result-athleteB" value="" size="8" maxlength="8" onchange="pointsHighJump"/>
+          <input class="result-field form-text" type="text" id="highjump-result-athleteB" name="highjump_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','highjump')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-400m-result-athleteB">
-          <input class="result-field form-text" type="text" id="400m-result-athleteB" name="400m_result-athleteB" value="" size="8" maxlength="8" onchange="points400m"/>
+          <input class="result-field form-text" type="text" id="400m-result-athleteB" name="400m_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','400m')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-hurdles-result-athleteB">
-          <input class="result-field form-text" type="text" id="hurdles-result-athleteB" name="hurdles_result-athleteB" value="" size="8" maxlength="8" onchange="pointsHurdles"/>
+          <input class="result-field form-text" type="text" id="hurdles-result-athleteB" name="hurdles_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','hurdles')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-discus-result-athleteB">
-          <input class="result-field form-text" type="text" id="discus-result-athleteB" name="discus_result-athleteB" value="" size="8" maxlength="8" onchange="pointsDiscus"/>
+          <input class="result-field form-text" type="text" id="discus-result-athleteB" name="discus_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','discus')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-pole-result-athleteB">
-          <input class="result-field form-text" type="text" id="pole-result-athleteB" name="pole_result-athleteB" value="" size="8" maxlength="8" onchange="pointsPole"/>
+          <input class="result-field form-text" type="text" id="pole-result-athleteB" name="pole_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','pole')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-javelin-result-athleteB">
-          <input class="result-field form-text" type="text" id="javelin-result-athleteB" name="javelin_result-athleteB" value="" size="8" maxlength="8" onchange="pointsJavelin"/>
+          <input class="result-field form-text" type="text" id="javelin-result-athleteB" name="javelin_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','javelin')"/>
           </div>
         </td>
         <td><div class="form-item form-type-textfield form-item-1500m-result-athleteB">
-          <input class="result-field form-text" type="text" id="1500m-result-athleteB" name="1500m_result-athleteB" value="" size="8" maxlength="8" onchange="points1500m"/>
+          <input class="result-field form-text" type="text" id="1500m-result-athleteB" name="1500m_result-athleteB" value="" onchange="calcPoints(this.value,'athleteB','1500m')"/>
           </div>
         </td>
       </tr>
       <tr>
-        <td><div class="form-item form-type-textfield form-item-total-points-athleteB"><input class="points-field form-text" type="text" id="total-points-athleteB" name="total_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-100m-points-athleteB"><input class="points-field form-text" type="text" id="100m-points-athleteB" name="100m_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-longjump-points-athleteB"><input class="points-field form-text" type="text" id="longjump-points-athleteB" name="longjump_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-shotput-points-athleteB"><input class="points-field form-text" type="text" id="shotput-points-athleteB" name="shotput_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-highjump-points-athleteB"><input class="points-field form-text" type="text" id="highjump-points-athleteB" name="highjump_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-400m-points-athleteB"><input class="points-field form-text" type="text" id="400m-points-athleteB" name="400m_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-hurdles-points-athleteB"><input class="points-field form-text" type="text" id="hurdles-points-athleteB" name="hurdles_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-discus-points-athleteB"><input class="points-field form-text" type="text" id="discus-points-athleteB" name="discus_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-pole-points-athleteB"><input class="points-field form-text" type="text" id="pole-points-athleteB" name="pole_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-javelin-points-athleteB"><input class="points-field form-text" type="text" id="javelin-points-athleteB" name="javelin_points_athleteB" value="" size="4" maxlength="4" /></div></td>
-        <td><div class="form-item form-type-textfield form-item-1500m-points-athleteB"><input class="points-field form-text" type="text" id="1500m-points-athleteB" name="1500m_points_athleteB" value="" size="4" maxlength="4" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-total-points-athleteB"><input class="points-field form-text" type="text" id="total-points-athleteB" name="total_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-100m-points-athleteB"><input class="points-field form-text" type="text" id="100m-points-athleteB" name="100m_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-longjump-points-athleteB"><input class="points-field form-text" type="text" id="longjump-points-athleteB" name="longjump_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-shotput-points-athleteB"><input class="points-field form-text" type="text" id="shotput-points-athleteB" name="shotput_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-highjump-points-athleteB"><input class="points-field form-text" type="text" id="highjump-points-athleteB" name="highjump_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-400m-points-athleteB"><input class="points-field form-text" type="text" id="400m-points-athleteB" name="400m_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-hurdles-points-athleteB"><input class="points-field form-text" type="text" id="hurdles-points-athleteB" name="hurdles_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-discus-points-athleteB"><input class="points-field form-text" type="text" id="discus-points-athleteB" name="discus_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-pole-points-athleteB"><input class="points-field form-text" type="text" id="pole-points-athleteB" name="pole_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-javelin-points-athleteB"><input class="points-field form-text" type="text" id="javelin-points-athleteB" name="javelin_points_athleteB" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-1500m-points-athleteB"><input class="points-field form-text" type="text" id="1500m-points-athleteB" name="1500m_points_athleteB" value="" /></div></td>
       </tr>
-      
+
+      <tr>
+        <td>Athlete C</td>
+        <td><div class="form-item form-type-textfield form-item-100m-result-athleteC">
+          <input class="result-field form-text" type="text" id="100m-result-athleteC" name="100m_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','100m')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-longjump-result-athleteC">
+          <input class="result-field form-text" type="text" id="longjump-result-athleteC" name="longjump_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','longjump')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-shotput-result-athleteC">
+          <input class="result-field form-text" type="text" id="shotput-result-athleteC" name="shotput_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','shotput')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-highjump-result-athleteC">
+          <input class="result-field form-text" type="text" id="highjump-result-athleteC" name="highjump_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','highjump')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-400m-result-athleteC">
+          <input class="result-field form-text" type="text" id="400m-result-athleteC" name="400m_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','400m')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-hurdles-result-athleteC">
+          <input class="result-field form-text" type="text" id="hurdles-result-athleteC" name="hurdles_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','hurdles')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-discus-result-athleteC">
+          <input class="result-field form-text" type="text" id="discus-result-athleteC" name="discus_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','discus')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-pole-result-athleteC">
+          <input class="result-field form-text" type="text" id="pole-result-athleteC" name="pole_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','pole')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-javelin-result-athleteC">
+          <input class="result-field form-text" type="text" id="javelin-result-athleteC" name="javelin_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','javelin')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-1500m-result-athleteC">
+          <input class="result-field form-text" type="text" id="1500m-result-athleteC" name="1500m_result-athleteC" value="" onchange="calcPoints(this.value,'athleteC','1500m')"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class="form-item form-type-textfield form-item-total-points-athleteC"><input class="points-field form-text" type="text" id="total-points-athleteC" name="total_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-100m-points-athleteC"><input class="points-field form-text" type="text" id="100m-points-athleteC" name="100m_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-longjump-points-athleteC"><input class="points-field form-text" type="text" id="longjump-points-athleteC" name="longjump_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-shotput-points-athleteC"><input class="points-field form-text" type="text" id="shotput-points-athleteC" name="shotput_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-highjump-points-athleteC"><input class="points-field form-text" type="text" id="highjump-points-athleteC" name="highjump_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-400m-points-athleteC"><input class="points-field form-text" type="text" id="400m-points-athleteC" name="400m_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-hurdles-points-athleteC"><input class="points-field form-text" type="text" id="hurdles-points-athleteC" name="hurdles_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-discus-points-athleteC"><input class="points-field form-text" type="text" id="discus-points-athleteC" name="discus_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-pole-points-athleteC"><input class="points-field form-text" type="text" id="pole-points-athleteC" name="pole_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-javelin-points-athleteC"><input class="points-field form-text" type="text" id="javelin-points-athleteC" name="javelin_points_athleteC" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-1500m-points-athleteC"><input class="points-field form-text" type="text" id="1500m-points-athleteC" name="1500m_points_athleteC" value="" /></div></td>
+      </tr>
+
+      <tr>
+        <td>Athlete D</td>
+        <td><div class="form-item form-type-textfield form-item-100m-result-athleteD">
+          <input class="result-field form-text" type="text" id="100m-result-athleteD" name="100m_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','100m')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-longjump-result-athleteD">
+          <input class="result-field form-text" type="text" id="longjump-result-athleteD" name="longjump_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','longjump')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-shotput-result-athleteD">
+          <input class="result-field form-text" type="text" id="shotput-result-athleteD" name="shotput_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','shotput')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-highjump-result-athleteD">
+          <input class="result-field form-text" type="text" id="highjump-result-athleteD" name="highjump_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','highjump')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-400m-result-athleteD">
+          <input class="result-field form-text" type="text" id="400m-result-athleteD" name="400m_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','400m')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-hurdles-result-athleteD">
+          <input class="result-field form-text" type="text" id="hurdles-result-athleteD" name="hurdles_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','hurdles')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-discus-result-athleteD">
+          <input class="result-field form-text" type="text" id="discus-result-athleteD" name="discus_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','discus')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-pole-result-athleteD">
+          <input class="result-field form-text" type="text" id="pole-result-athleteD" name="pole_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','pole')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-javelin-result-athleteD">
+          <input class="result-field form-text" type="text" id="javelin-result-athleteD" name="javelin_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','javelin')"/>
+          </div>
+        </td>
+        <td><div class="form-item form-type-textfield form-item-1500m-result-athleteD">
+          <input class="result-field form-text" type="text" id="1500m-result-athleteD" name="1500m_result-athleteD" value="" onchange="calcPoints(this.value,'athleteD','1500m')"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><div class="form-item form-type-textfield form-item-total-points-athleteD"><input class="points-field form-text" type="text" id="total-points-athleteD" name="total_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-100m-points-athleteD"><input class="points-field form-text" type="text" id="100m-points-athleteD" name="100m_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-longjump-points-athleteD"><input class="points-field form-text" type="text" id="longjump-points-athleteD" name="longjump_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-shotput-points-athleteD"><input class="points-field form-text" type="text" id="shotput-points-athleteD" name="shotput_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-highjump-points-athleteD"><input class="points-field form-text" type="text" id="highjump-points-athleteD" name="highjump_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-400m-points-athleteD"><input class="points-field form-text" type="text" id="400m-points-athleteD" name="400m_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-hurdles-points-athleteD"><input class="points-field form-text" type="text" id="hurdles-points-athleteD" name="hurdles_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-discus-points-athleteD"><input class="points-field form-text" type="text" id="discus-points-athleteD" name="discus_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-pole-points-athleteD"><input class="points-field form-text" type="text" id="pole-points-athleteD" name="pole_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-javelin-points-athleteD"><input class="points-field form-text" type="text" id="javelin-points-athleteD" name="javelin_points_athleteD" value="" /></div></td>
+        <td><div class="form-item form-type-textfield form-item-1500m-points-athleteD"><input class="points-field form-text" type="text" id="1500m-points-athleteD" name="1500m_points_athleteD" value="" /></div></td>
+      </tr>
+
     </table>
     </form>
   </body>
