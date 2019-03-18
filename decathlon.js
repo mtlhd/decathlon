@@ -43,7 +43,7 @@ function calcTotal(athlete) {
     points += pointsField.value;
   }
   
-  var totalPointsField = document.getElementById"total-points-" + athlete);
+  var totalPointsField = document.getElementById("total-points-" + athlete);
   totalPointsField.value = points;
 }
   
