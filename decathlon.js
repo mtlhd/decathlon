@@ -28,5 +28,5 @@ function calcPoints(result, athlete, event, form) {
     points = calcFieldPoints(result, athlete, event);
   }
   
-  document.form["input#" + event + "-points-" + athlete].value = points;
+  document.form[event + "-points-" + athlete].value = points;
 }
