@@ -36,14 +36,14 @@ function calcPoints(result, athlete, event) {
 
 function calcTotal(athlete) {
   var points = 0;
-  var keys = parameters.keys;
+  var keys = Object.keys(parameters);
   
-  for (const key of keys) {
-    var pointsField = document.getElementById(keys + "-points-" + athlete);
-    points += pointsField.value;
-  }
+  Object.keys(parameters).forEach(function(key, index) {
+    var pointsField = document.getElementById(key + "-points-" + athlete);
+    points += Number(pointsField.value);
+  }, parameters);
   
   var totalPointsField = document.getElementById("total-points-" + athlete);
   totalPointsField.value = points;
 }
-  
+
